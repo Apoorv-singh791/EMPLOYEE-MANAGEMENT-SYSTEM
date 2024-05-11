@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Employee Management System</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #9afff0;
+    }
+    .container {
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background-color: white;
+    }
+    h1 {
+        text-align: center;
+    }
+    button {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: #007bff;
+        color: #fff;
+    }
+    button:hover {
+        background-color: #0056b3;
+    }
+</style>
+<script>
+    function closeWindow() {
+        window.close(); // Close the browser window
+    }
+</script>
+</head>
+<body>
+
+<div class="container">
+    <h1>Employee Management System</h1>
+    <form action="/add_employee_page" method="post">
+        <button type="submit">Add Employee</button>
+    </form>
+    <form action="/remove_employee_page" method="post">
+        <button type="submit">Remove Employee</button>
+    </form>
+    <form action="/promote_employee_page" method="post">
+        <button type="submit">Promote Employee</button>
+    </form>
+    <form action="/display_employees_page" method="post">
+        <button type="submit">Display Employees</button>
+    </form>
+    <form>
+        <button onclick="closeWindow()">Exit</button>
+    </form>
+</div>
+
+</body>
+</html>
